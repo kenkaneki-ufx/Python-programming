@@ -307,3 +307,41 @@ else:
     print(num,"is not a Armstrong number")
 '''
 
+'''  list comprehension
+l1 = [1,2,3,4,5,6]
+l2 = [x+1 for x in l1]
+print(l2)
+l3 = [x+2 for x in l1 if x%2==0]
+print(l3)
+
+cubes = [x**3 for x in range(20) if x%2==0]
+print(cubes)
+'''
+
+'''  WAF 'makepairs' that takes as input two list of equal length and return a single list of same length where k^th element is the pair of k element from the input list
+def makepairs(l1,l2):
+    if len(l1)==len(l2):
+        return [(l1[k],l2[k]) for k in range(len(l1))]
+    else:
+        print("Length is not same.")
+l1 = [1,3,5,7]
+l2 = [2,4,6]
+print("Pairs are ->",makepairs(l1,l2))
+'''
+
+''' list L = [1,2,3,4,,5,6,7,8,9] 
+    1. return a list of numbers starting from the second last element of numbers.
+    2. return a list that start from third element to the second last element.
+    3. return a list that has only even position element of list L.
+    4. return a list that start from the middle of the list L.
+    5. return a list that reverse all the elements starting from element at index '0' to middle only and return the entire list.
+    6. divide each element of the list by 2 and replace it with the remainder.
+
+L = [1,2,3,4,5,6,7,8,9]
+print(L[len(L)-2::-1])
+print(L[2:len(L)-2])
+print(L[::2])
+print(L[len(L)//2:])
+print(L[len(L)//2::-1])
+print([x%2 for x in L])
+'''
