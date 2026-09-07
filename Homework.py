@@ -345,3 +345,14 @@ print(L[len(L)//2:])
 print(L[len(L)//2::-1])
 print([x%2 for x in L])
 '''
+
+# print("~".join(['M','O','N','E','Y']))
+
+'''  WAP to replace character in string.
+s,old_char,new_char = input("Enter string: "),input("Enter old character: "),input("Enter new character: ")
+list1 = [new_char if char == old_char else char for char in s]  
+print("".join(list1))
+
+text,a,b = input("Enter string: "),input("Enter old character: "),input("Enter new character: ")
+print(text.replace(a,b))
+'''
