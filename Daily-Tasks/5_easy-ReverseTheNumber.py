@@ -1,0 +1,8 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    reversed_number = 0
+    while n != 0:
+        reversed_number = reversed_number * 10 + n % 10
+        n //= 10
+    print(reversed_number)
