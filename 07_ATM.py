@@ -85,7 +85,7 @@ class Bank:
             print("Your account Doesn't exist.\nCreate new account ?")
         else:
             amount = float(input("Enter your withdrawal amount $: "))
-            if amount > self.balance:
+            if amount > self.balance and amount<=0:
                 print("Invalid Withdrawal Amount..")
             else:
                 self.balance = self.balance - amount
